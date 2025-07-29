@@ -1,0 +1,19 @@
+/* Layout padrão: duas colunas (lado a lado) */
+.Container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Para telas pequenas: empilhar os formulários */
+@media (max-width: 768px) {
+    .Container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container {
+        max-width: 90%;
+    }
+}

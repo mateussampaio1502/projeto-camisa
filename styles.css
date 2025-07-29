@@ -4,17 +4,28 @@ body {
     background-color: #f0f4f8; /* fundo claro e suave */
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start; /* Alinha os itens ao topo para evitar corte */
+    min-height: 100vh; /* garante altura mínima da tela */
+    padding: 20px; /* evita que fique colado nas bordas */
+    box-sizing: border-box;
+}
+
+.Container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .form-container {
-    background-color: #ffffff;
+    flex: 1 1 300px;
+    width: 90%;
+    max-width: 5 00px;
     padding: 30px;
+    background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 400px;
+    margin-bottom: 30px; /* espaço entre os blocos */
 }
 
 h2 {
